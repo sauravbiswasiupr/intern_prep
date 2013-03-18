@@ -12,8 +12,8 @@ def numDistinctTuples(a):
       for j in range(i+1,n):
         if a[j] > maxtillnow: 
            tuple_length = tuple_length +1
-           if tuple_length > 3:
-
+           if tuple_length == 3:
+              temp_tuple.append(a[j])
               triples.append(temp_tuple)
               break  
            temp_tuple.append(a[j])
